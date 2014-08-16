@@ -93,12 +93,24 @@ h1, h2, h3, h4, h5, h6 {
 header {
   position: relative;
   height: 1080px;
-  background-image: url(img/slides/first.jpg);
+  /* background-image: url(img/slides/first.jpg); */
 }
 .inner {
   width: 960px;
   margin: 0 auto;
   position: relative;
+}
+.slide-container {
+  z-index: -5;
+  height: 1080px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+#new-royalslider-1 {
+  margin: 0 auto;
+  position: relative;
+  z-index: -5;
 }
 /*
  Menu static container. The key!!

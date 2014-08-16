@@ -47,11 +47,6 @@
 			</div><!-- staticHeader -->
 		</div><!-- inner -->
 	</nav>
-		<div class="inner">
-			
-
-
-		</div>
 </header>
 <section role="main" class="clearfix">
 
@@ -75,6 +70,7 @@
 	<div class="mainfooter">
 	</div><!-- mainfooter -->
 </footer>
+
 	<?php wp_footer(); ?>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
 	
@@ -85,6 +81,6 @@
 		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
 		s.parentNode.insertBefore(g,s)})(document,'script');
 	</script>
-	
+
 </body>
 </html>
