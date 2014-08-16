@@ -70,7 +70,11 @@
 	<div class="mainfooter">
 	</div><!-- mainfooter -->
 </footer>
-
+<div class="backblock">
+	<div class="container">
+		<?php echo get_new_royalslider(1); ?>
+	</div><!-- container -->
+</div><!-- backblock -->
 	<?php wp_footer(); ?>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
 	
