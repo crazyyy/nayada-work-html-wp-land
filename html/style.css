@@ -179,8 +179,8 @@ header {
 }
 .headnav li a{
   display: block;
-  margin-right: 10px;
-  padding: 38px 0 0;
+  margin-right: 17px;
+  padding: 42px 0 0;
   border-top: 3px solid transparent;
   color: #fff;
   text-decoration: none;
@@ -233,7 +233,7 @@ section {
 }
 /* about-water */
 .about-water {
-  padding: 110px 0 0;
+  padding: 103px 0 0;
   background-color: #f6f6f6;
   position: relative;
 }
@@ -253,7 +253,7 @@ section {
   color: #003366;
   font-family: 'Roboto Slab', serif;
   font-weight: normal;
-  margin: 0 auto 35px;
+  margin: 0 auto 31px;
 }
 #tabs,
 #tabs2{
@@ -277,17 +277,17 @@ section {
   width: 960px;
   margin: 0 auto;
   text-align: center;
-  height: 72px;
+  height: 54px;
 }
 #tabs .tab-header li,
 #tabs2 .tab-header li {
-  width: 300px;
-  height: 72px;
+  width: 303px;
+  height: 55px;
   display: inline-block;
   font-size: 36px;
   font-weight: bold;
-  line-height: 2;
-  margin: 0 5px;
+  line-height: 1.5;
+  margin: 0 8px;
 }
 
 #tabs .tab-header li a,
@@ -309,9 +309,9 @@ section {
   overflow: hidden;
   position: relative;
   background: white;
-  width: 780px;
+  width: 940px;
   margin: 0 auto;
-  padding: 30px 90px 100px;
+  padding: 30px 10px 30px;
 }
 #tabs_container div {
   /* margin-right: 40px; */
@@ -387,37 +387,38 @@ section {
   font-weight: normal;
   font-size: 24px;
   text-align: center;
-  padding-top: 36px;
-  margin-bottom: 36px;
+  padding-top: 56px;
+  margin-bottom: 17px;
 }
 .about-water p {
   margin: 0;
+  line-height: 1.7;
 }
 .centerimage {
   display: block;
   text-align: center;
 }
 .about-water .pluses {
-  width: 765px;
-  margin-left: 70px;
+  width: 758px;
+  margin-left: 66px;
 }
 .about-water .pluses li{
   display: block;
-  padding: 18px 10px 18px 160px;
-  line-height: 1;
+  padding: 16px 10px 16px 160px;
+  line-height: 1.05;
   font-size: 20px;
   margin: 0;
   background-repeat: no-repeat;
   background-image: url(img/bg/about-water-li.png);
   background-position: 60px center;
 }
-.about-water .pluses li:nth-child(odd) {
+.about-water .pluses li:nth-child(even) {
   background-color: #f0efef;
   background-image: url(img/bg/about-water-li-white.png);
 }
 /* delivery-price */
 .delivery-price {
-  padding-top: 110px;
+  padding-top: 100px;
   background-color: #f6f6f6;
 }
 .delivery-price h6{
@@ -426,16 +427,18 @@ section {
   color: #003366;
   font-family: 'Roboto Slab', serif;
   font-weight: normal;
-  margin: 0 0 54px;
+  margin: 0 0 42px;
+  line-height: 1;
 }
 .delivery-price h2{
   width: 580px;
   text-align: center;
   font-family: 'Roboto Slab', serif;
-  margin: 0 auto 34px;
+  margin: 0 auto 30px;
   font-size: 24px;
   color: #333333;
   font-weight: normal;
+  line-height: 1.4;
 }
 .delivery-price .wide-block{
   width: 940px;
@@ -451,7 +454,7 @@ section {
   float: left;
   width: 165px;
   height: 124px;
-  padding: 110px 35px 0;
+  padding: 107px 35px 0;
   text-align: center;
   font-size: 14px;
   background-image: url(img/ico/ico-delivery-li-1.png);
@@ -474,6 +477,7 @@ section {
 }
 .delivery-price .wide-block li p {
   margin: 0;
+  line-height: 1.2;
 }
 .delivery-price .left-block,
 .delivery-price .right-block {
@@ -490,14 +494,14 @@ section {
   font-size: 24px;
   text-align: center;
   font-family: 'Roboto Slab', serif;
-  margin: 0 0 26px;
+  margin: 0 0 15px;
 }
 .delivery-price .left-block{
   float: left;
 }
 .delivery-price .left-block p{
   width: 360px;
-  margin: 0 auto 36px;
+  margin: 0 auto 21px;
   font-size: 14px;
 }
 .delivery-price .left-block .gray{
@@ -509,7 +513,8 @@ section {
   color: #555555;
   text-align: center;
   font-size: 24px;
-  margin: 0 auto 18px;
+  margin: 0 auto 8px;
+  letter-spacing: 3px;
 }
 .delivery-price .left-block .price-quantity span{
   color: #65c4f6;
@@ -536,8 +541,9 @@ section {
 }
 .delivery-price .right-block li {
   position: relative;
-  padding: 0 0 0 30px;
-  margin: 0 0 10px;
+  padding: 0 0 0 22px;
+  margin: 0 0 14px;
+  font-size: 14px;
 }
 .delivery-price .right-block li span{
   margin-right: 16px;
@@ -551,22 +557,24 @@ section {
 }
 /* equipment */
 .equipment {
-  padding: 90px 0 0;
+  padding: 85px 0 0;
   background-color: #f6f6f6;
 }
 .equipment h6{
   font-size: 48px;
   color: #003366;
   text-align: center;
-  margin: 0 0 54px;
+  margin: 0 0 45px;
   font-family: 'Roboto Slab', serif;
+  line-height: 1;
 }
 .equipment h3{
   width: 660px;
   font-size: 24px;
   color: #333333;
   text-align: center;
-  margin: 0 auto 36px;
+  margin: 0 auto 31px;
+  line-height: 1.3;
 }
 .equipment ul{
   width: 940px;
@@ -594,17 +602,19 @@ section {
   font-size: 18px;
   color: #181818;
   font-weight: bold;
-  margin: 0 0 18px;
+  margin: 0 0 10px;
 }
 .equipment li p{
   font-size: 12px;
   color: #333333;
-  margin: 0 0 26px;
+  margin: 0 0 24px;
+  padding: 0 16px;
 }
 .equipment li .price{
-  margin: 0 0 36px;
+  margin: 0 0 27px;
   font-size: 14px;
   color: #033071;
+  padding: 0;
 }
 .equipment li p strong{
   font-size: 18px;
@@ -614,8 +624,8 @@ section {
 }
 .equipment .wide-contact {
   width: 940px;
-  height: 126px;
-  padding-top: 18px;
+  height: 114px;
+  padding-top: 14px;
   margin: 0 auto 36px;
   text-align: center;
   background-color: #fff;
@@ -623,7 +633,7 @@ section {
 .equipment .wide-contact p {
   font-size: 18px;
   color: #222222;
-  margin-bottom: 18px;
+  margin-bottom: 4px;
 }
 .equipment .wide-contact .grey {
   font-style: italic;
@@ -650,7 +660,7 @@ section {
   background-color: #f6f6f6;
 }
 .actions {
-  margin-bottom: 54px;
+  padding-bottom: 54px;
 }
 .actions h6{
   font-size: 48px;
@@ -661,28 +671,28 @@ section {
 .actions .actions-slider{
   height: 332px;
   width: 950px;
-  margin: 0 0 54px 10px;
+  margin: 0 0 58px 10px;
   position: relative;
-  padding-top: 110px;
+  padding-top: 82px;
 }
 .actions .actions-slider h5{
   font-size: 55px;
   font-weight: bold;
   color: #ffffff;
-  margin: 0 0 36px;
+  margin: 0 0 16px;
   width: 100%;
   float: left;
 }
 .actions .actions-slider p{
   width: 540px;
-  margin: 0 410px 72px 0;
+  margin: 0 410px 64px 0;
   color: #fff;
   font-size: 30px;
   float: left;
 }
 .actions .actions-slider .button-orange{
   width: 170px;
-  height: 50px;
+  height: 51px;
   float: left;
   margin-right: 18px;
 }
@@ -708,13 +718,13 @@ section {
   background-repeat: no-repeat;
   background-image: url(img/battles.png);
   position: absolute;
-  top: -15px;
+  top: -19px;
   right: -45px;
 }
 .actions ul {
   width: 940px;
   height: 378px;
-  margin: 0 auto;
+  margin: 0 auto 54px;
 }
 .actions ul li{
   display: inline-block;
@@ -731,13 +741,14 @@ section {
 .actions ul li img{
   width: 300px;
   height: 198px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 .actions ul li h5{
   font-size: 18px;
   font-weight: normal;
   color: #333333;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
+  line-height: 1;
 }
 .actions ul li p{
   width: 280px;
@@ -746,19 +757,20 @@ section {
 }
 /* productions */
 .productions {
-  padding-top: 108px;
+  padding-top: 102px;
 }
 .productions h5 {
   font-size: 48px;
   color: #003366;
-  margin: 0 0 48px;
+  margin: 0 auto 32px;
   text-align: center;
   font-family: 'Roboto Slab', serif;
+  width: 760px;
 }
 .productions .descr {
   width: 770px;
   text-align: center;
-  margin: 0 0 36px;
+  margin: 0 auto 33px;
   font-size: 14px;
 }
 .productions ul {
@@ -766,6 +778,7 @@ section {
   background-repeat: no-repeat;
   background-position: center 54px;
   background-image: url(img/bg/productions-ul.jpg);
+  margin-bottom: 70px;
 }
 .productions li {
   height: 270px;
@@ -798,11 +811,13 @@ section {
   color: #056090;
   font-family: 'Roboto Slab', serif;
   margin-bottom: 18px;
+  width: 470px;
 }
 .productions .bottom-two p {
   font-size: 14px;
   padding: 0 60px 0 160px;
   margin: 0 0 36px;
+  line-height: 1.1;
 }
 .productions .bottom-two div {
   width: 470px;
@@ -820,7 +835,7 @@ section {
 }
 /* aboutus */
 .aboutus {
-  padding-top: 112px;
+  padding-top: 107px;
   background-color: #f6f6f6;
 }
 .aboutus h6 {
@@ -828,10 +843,10 @@ section {
   text-align: center;
   color: #003366;
   font-family: 'Roboto Slab', serif;
-  margin-bottom: 36px;
+  margin-bottom: 23px;
 }
 .aboutus h5{
-  margin-bottom: 36px;
+  margin-bottom: 38px;
   font-family: 'Roboto Slab', serif;
   font-size: 24px;
   text-align: center;
@@ -841,7 +856,7 @@ section {
   display: block;
   width: 780px;
   height: 234px;
-  margin: 0 auto 44px;
+  margin: 0 auto 39px;
   position: relative;
 }
 .aboutus .sertificate img{
@@ -877,7 +892,7 @@ section {
 .aboutus h4.avards{
   font-family: 'Roboto Slab', serif;
   font-size: 24px;
-  margin-bottom: 36px;
+  margin-bottom: 30px;
   text-align: center;
 }
 .aboutus ul.avards{
@@ -951,15 +966,16 @@ section {
 .aboutus .client-response {
   width: 960px;
   background-color: #fff;
-  margin: 0 auto 10px;
+  margin: 0 auto 1px;
 }
 .aboutus .client-response li {
   width: 430px;
   float: left;
   display: inline-block;
   height: 110px;
-  padding: 25px 45px 25px 5px ;
+  padding: 18px 45px 25px 5px;
   font-size: 12px;
+  line-height: 1.4;
 }
 .aboutus .client-response li p{
   margin: 0 0 28px;
@@ -972,16 +988,16 @@ section {
 }
 /* response */
 .response {
-  padding-top: 46px;
+  padding-top: 41px;
   background-color: #01547e;
 }
 .response  h6 {
-  font-size: 46px;
+  font-size: 30px;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Roboto Slab', serif;
-  margin: 0 auto 38px;
+  margin: 0 auto 33px;
 }
 .response  .button-transwhite {
   font-size: 18px;
@@ -993,14 +1009,14 @@ section {
   height: 46px;
   border: 2px solid #fff;
   border-radius: 2px;
-  margin: 0 auto 46px;
+  margin: 0 auto 40px;
   line-height: 2.5;
   text-decoration: none;
   font-weight: bold;
 }
 .response ul {
   width: 960px;
-  margin: 0 auto 20px;
+  margin: 0 auto;
 }
 .response ul li{
   display: inline-block;
@@ -1012,10 +1028,11 @@ section {
   font-size: 14px;
 }
 .response ul li:first-child p {
-  margin: 0 0 25px;
+  margin: 0 0 15px;
+  line-height: 1;
 }
 .response ul li:first-child .price-quantity {
-  margin: 0 0 20px;
+  margin: 0 0 16px;
   font-size: 24px;
 }
 .response ul li:first-child .price-quantity span{
@@ -1024,8 +1041,8 @@ section {
   font-weight: bold;
 }
 .response ul li h3{
-  font-size: 18px;
-  margin: 0 0 30px;
+  font-size: 17px;
+  margin: 0 0 28px;
 }
 .response ul li .phone-foot{
   width: 370px;
@@ -1214,3 +1231,5 @@ h3 {
     page-break-after: avoid;
 }
 }
+
+
