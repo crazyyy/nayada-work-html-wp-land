@@ -477,9 +477,10 @@ section {
 }
 .delivery-price .left-block,
 .delivery-price .right-block {
-  width: 460px;
+  width: 378px;
   margin: 0 10px;
   background-color: #fff;
+  padding: 18px 22px 0 60px;
 }
 .delivery-price .left-block h3,
 .delivery-price .right-block h3 {
