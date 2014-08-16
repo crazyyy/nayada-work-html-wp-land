@@ -10,9 +10,7 @@
         defaults = {
             effect: 'scale'
         };
-
        // $('<style>body { background-color: red; color: white; }</style>').appendTo('head');
-
     function Plugin( element, options ) {
         this.element = element;
         this.$elem = $(this.element);
@@ -21,7 +19,6 @@
         this._name = pluginName;
         this.init();
     }
-
     Plugin.prototype = {
 
         init: function() {
@@ -61,7 +58,6 @@
                 var thisform = mythis.parent().parent().parent();
                 var thislink = mythis.attr('href');
 
-
                 firstdiv.addClass('transition');
 
                 links.removeClass('tabulous_active');
@@ -81,27 +77,13 @@
                     alldivs.removeClass('showflip').addClass('make_transist').addClass('hideflip');
                     thisform.find('div'+thislink).addClass('make_transist').addClass('showflip');
                 }
-
-
                 firstdiv.css('height',thisdivwidth+'px');
-
-                
-
-
             });
-
-           
-
-
-         
-            
         },
-
         yourOtherFunction: function(el, options) {
             // some logic
         }
     };
-
     // A really lightweight plugin wrapper around the constructor,
     // preventing against multiple instantiations
     $.fn[pluginName] = function ( options ) {
@@ -109,7 +91,4 @@
             new Plugin( this, options );
         });
     };
-
 })( jQuery, window, document );
-
-
