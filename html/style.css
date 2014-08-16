@@ -643,11 +643,14 @@ section {
 }
 /* actions */
 .actions {
-  background-color: #f6f6f6;
   padding-top: 72px;
   background-repeat: no-repeat;
   background-position: center 161px;
   background-image: url(img/bg/actions.jpg);
+  background-color: #f6f6f6;
+}
+.actions {
+  margin-bottom: 54px;
 }
 .actions h6{
   font-size: 48px;
@@ -709,26 +712,112 @@ section {
   right: -45px;
 }
 .actions ul {
-
+  width: 940px;
+  height: 378px;
+  margin: 0 auto;
 }
 .actions ul li{
-
+  display: inline-block;
+  float: left;
+  width: 300px;
+  height: 378px;
+  margin-right: 20px;
+  background-color: #fff;
+  text-align: center;
+}
+.actions ul li:last-child{
+  margin-right: 0;
 }
 .actions ul li img{
-
+  width: 300px;
+  height: 198px;
+  margin-bottom: 20px;
 }
 .actions ul li h5{
-
+  font-size: 18px;
+  font-weight: normal;
+  color: #333333;
+  margin-bottom: 26px;
 }
 .actions ul li p{
-
+  width: 280px;
+  font-size: 14px;
+  margin: 0 auto;
 }
-
-
-
-
-
-
+/* productions */
+.productions {
+  padding-top: 108px;
+}
+.productions h5 {
+  font-size: 48px;
+  color: #003366;
+  margin: 0 0 48px;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+}
+.productions .descr {
+  width: 770px;
+  text-align: center;
+  margin: 0 0 36px;
+  font-size: 14px;
+}
+.productions ul {
+  height: 270px;
+  background-repeat: no-repeat;
+  background-position: center 54px;
+  background-image: url(img/bg/productions-ul.jpg);
+}
+.productions li {
+  height: 270px;
+  width: 230px;
+  margin: 0 5px;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+.productions li h4{
+  font-size: 18px;
+  color: #555555;
+  font-weight: bold;
+  margin: 0 0 116px;
+}
+.productions li p{
+  font-size: 14px;
+  margin: 0;
+  position: absolute;
+  top: 152px;
+  line-height: 1;
+}
+.productions .bottom-two {
+  width: 960px;
+  margin: 0 auto 36px;
+}
+.productions .bottom-two h5{
+  font-size: 24px;
+  color: #056090;
+  font-family: 'Roboto Slab', serif;
+  margin-bottom: 18px;
+}
+.productions .bottom-two p {
+  font-size: 14px;
+  padding: 0 60px 0 160px;
+  margin: 0 0 36px;
+}
+.productions .bottom-two div {
+  width: 470px;
+  float: right;
+  background-color: #f7f7f7;
+  padding-top: 18px;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-position: 15px 52px;
+  background-image: url(img/bg/bottom-two-2.png);
+}
+.productions .bottom-two div:first-child{
+  float: left;
+  background-image: url(img/bg/bottom-two-1.png);
+}
 
 
 
