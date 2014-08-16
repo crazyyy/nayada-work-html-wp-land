@@ -6,24 +6,19 @@
 		<h6><?php the_title(); ?></h6>
 		<h2><?php the_field( "subtite" ); ?></h2>
 		<div class="wide-block">
+			<?php if( have_rows('wide_block') ): ?>
 			<ul class="clearfix">
+			<?php while( have_rows('wide_block') ): the_row(); 
+    			$wide_block_min = get_sub_field('wide_block_min');
+    			$wide_block_full = get_sub_field('wide_block_full');
+	        ?>
 				<li>
-					<h5>Контроль качества</h5>
-					<p>Регулярные замеры показателей продукта. Уникальная технология очистки.</p>
+					<h5><?php echo $wide_block_min; ?></h5>
+					<p><?php echo $wide_block_full; ?></p>
 				</li>
-				<li>
-					<h5>Служба доставки</h5>
-					<p>Наши экспедиторы поднимут бутыли на любой этаж, даже если в вашем доме нет лифта.</p>
-				</li>
-				<li>
-					<h5>Без выходных</h5>
-					<p>Наша служба доставки работает с 8 до 18 в будни и с 9 до 17 по выходным.</p>
-				</li>
-				<li>
-					<h5>15 лет опыта</h5>
-					<p>Год за годом мы совершенствуемся и создаем лучшую компанию по доставке воды.</p>
-				</li>
-			</ul>
+        		<?php endwhile; ?>
+        	</ul>
+        	<?php endif; ?>
 		</div><!-- wide-block -->
 		<div class="left-block">
 			<h3><?php the_field( "bottom_left_title" ); ?></h3>
