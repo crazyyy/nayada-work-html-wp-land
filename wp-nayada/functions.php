@@ -5,6 +5,9 @@
  *  Custom functions, support, custom post types and more.
  */
 
+include_once('acf/acf.php');
+include_once('acfr/acf-repeater.php');
+
 //  Enable styles for WP admin panel
 //  RU: Подключение собственных шрифтов и скриптов для админки
 function wpeAdminThemeStyle() {
@@ -29,14 +32,6 @@ function catchFirstImage() {
     $first_img = get_template_directory_uri() . '/img/noimage.jpg'; }
     return $first_img;
 }
-
-//  Disable auto save posts
-//  RU: Отключение автоматического сохранения записи
-//  http://wordpresso.org/hacks/29-wordpress-tryukov-dlya-rabotyi-s-zapisyami-i-stranitsami/
-function disableAutoSave(){
-    wp_deregister_script('autosave');
-}
-add_action( 'wp_print_scripts', 'disableAutoSave' );
 
 /*------------------------------------*\
     External Modules/Files
@@ -73,18 +68,6 @@ function wpeHeaderScripts()
     }
 }
 
-//  Load conditional scripts
-//  RU: Пример подключения стороннего шрифта дял специфической страницы
-/*
-function wpeConditionalScripts()    {
-    if (is_page('pagenamehere')) {
-        wp_register_script('scriptname', get_template_directory_uri() . '/js/scriptname.js', array('jquery'), '1.0.0'); // Conditional script(s)
-        wp_enqueue_script('scriptname'); // Enqueue it!
-    }
-}
-add_action('wp_print_scripts', 'wpeConditionalScripts'); // Add Conditional Page Scripts
-*/
-
 /*------------------------------------*\
 	Theme Cleanup
     RU: Отключение всякого лишнего
@@ -98,23 +81,6 @@ function my_remove_recent_comments_style() {
         'recent_comments_style'
     ));
 }
-
-
-
-// Load any external files you have here
-
-/*------------------------------------*\
-    Theme Support
-\*------------------------------------*/
-
-
-
-
-
-
-
-
-
 
 if (!isset($content_width))
 {
@@ -133,32 +99,8 @@ if (function_exists('add_theme_support'))
     add_image_size('small', 120, '', true); // Small Thumbnail
     add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
 
-    // Add Support for Custom Backgrounds - Uncomment below if you're going to use
-    //  RU: Добавление поддержки темой собственного фона - цвета или зображения. Раскоментируйте, что бы работало
-    // http://wp-kama.ru/function/add_theme_support#h3_3
-    /* 
-    add_theme_support('custom-background', array(
-	'default-color' => 'ccc',
-	'default-image' => get_template_directory_uri() . '/img/bg.jpg'
-    ));
-    */
-
-    // Add Support for Custom Header - Uncomment below if you're going to use
-    /*add_theme_support('custom-header', array(
-	'default-image'			=> get_template_directory_uri() . '/img/headers/default.jpg',
-	'header-text'			=> false,
-	'default-text-color'		=> '000',
-	'width'				=> 1000,
-	'height'			=> 198,
-	'random-default'		=> false,
-	'wp-head-callback'		=> $wphead_cb,
-	'admin-head-callback'		=> $adminhead_cb,
-	'admin-preview-callback'	=> $adminpreview_cb
-    ));*/
-
     // Enables post and comment RSS feed links to head
     add_theme_support('automatic-feed-links');
-
     // Localisation Support
     load_theme_textdomain('wpeasy', get_template_directory() . '/languages');
 }
@@ -263,22 +205,6 @@ function add_slug_to_body_class($classes)
     return $classes;
 }
 
-
-// Pagination for paged posts, Page 1, Page 2, Page 3, with Next and Previous Links, No plugin
-function html5wp_pagination()
-{
-    global $wp_query;
-    $big = 999999999;
-    echo paginate_links(array(
-        'base' => str_replace($big, '%#%', get_pagenum_link($big)),
-        'format' => '?paged=%#%',
-        'current' => max(1, get_query_var('paged')),
-        'total' => $wp_query->max_num_pages
-    ));
-}
-
-
-
 // Remove Admin bar
 function remove_admin_bar()
 {
@@ -297,25 +223,6 @@ function remove_thumbnail_dimensions( $html )
     $html = preg_replace('/(width|height)=\"\d*\"\s/', "", $html);
     return $html;
 }
-
-// Custom Gravatar in Settings > Discussion
-function html5blankgravatar ($avatar_defaults)
-{
-    $myavatar = get_template_directory_uri() . '/img/gravatar.jpg';
-    $avatar_defaults[$myavatar] = "Custom Gravatar";
-    return $avatar_defaults;
-}
-
-// Threaded Comments
-function enable_threaded_comments()
-{
-    if (!is_admin()) {
-        if (is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
-            wp_enqueue_script('comment-reply');
-        }
-    }
-}
-
 /*------------------------------------*\
 	Actions + Filters + ShortCodes
 \*------------------------------------*/
