@@ -58,38 +58,10 @@
 	<?php get_template_part('templates-about-water'); ?>
 
 	<?php get_template_part('templates-delivery-price'); ?>
-	
+
 	<?php get_template_part('templates-equipment'); ?>
 
-	
-  	<article class="actions">
-		<div class="inner">
-			<h6>Акции</h6>
-			<div class="actions-slider clearfix">
-				<h5>Пейте щелочную воду</h5>
-				<p>Приобщайтесь к тайнам долголетия вместе с Наядой</p>
-				<a href="" class="order button-orange">ЗАКАЗАТЬ</a> <a href="" class="detailed button-transparent">ПОДРОБНЕЕ</a>
-				<div class="battles"></div><!-- battles -->
-			</div><!-- actions-slider -->
-			<ul class="clearfix">
-				<li>
-					<img src="img/actions-1.jpg" alt="">
-					<h5>Лучшее - детям!</h5>
-					<p>Нашим детям необходимо внимание и забота, поэтому всем детским учреждениям мы предоставляем специальную цену на питьевую воду «Наяда» – 21 грн.</p>
-				</li>
-				<li>
-					<img src="img/actions-2.jpg" alt="">
-					<h5>Будем знакомы</h5>
-					<p>Подарок, как для клиентов, так и для их друзей, знакомых и близких, которые станут так же нашими клиентами. Познакомьте Ваших родственников, знакомых с нашими возможностями и получите в подарок 1 баллон воды.</p>
-				</li>
-				<li>
-					<img src="img/actions-3.jpg" alt="">
-					<h5>Скидка для пенсионеров</h5>
-					<p>Вы пенсионер? <br>Для Вас один баллон воды «Наяда» стоит 22 грн.</p>
-				</li>
-			</ul>
-		</div><!-- inner -->
-	</article><!-- actions -->
+	<?php get_template_part('templates-actions'); ?>
 
 	<article class="productions">
 		<div class="inner">
