@@ -67,7 +67,7 @@
 
 	<?php get_template_part('templates-aboutus'); ?>
 
-	<?php get_template_part('templates-aboutus'); ?>
+	<?php get_template_part('templates-response'); ?>
 	
 </section>
 </div><!-- #wrapper -->
