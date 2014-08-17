@@ -32,7 +32,9 @@
     <![endif]-->
 <div id="wrapper">
 	<header class="clearfix">
-
+	<div class="inner slider-container">
+		<?php echo get_new_royalslider(1); ?>
+	</div><!-- slider-container -->
 	<nav class="headernav" role="navigation">
 		<div class="blue-bg"></div>
 		<div class="inner">
@@ -70,11 +72,6 @@
 	<div class="mainfooter">
 	</div><!-- mainfooter -->
 </footer>
-<div class="backblock">
-	<div class="container">
-		<?php echo get_new_royalslider(1); ?>
-	</div><!-- container -->
-</div><!-- backblock -->
 	<?php wp_footer(); ?>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
 	
