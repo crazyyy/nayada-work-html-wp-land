@@ -72,8 +72,13 @@
 	<div class="mainfooter">
 	</div><!-- mainfooter -->
 </footer>
+
+<div class="recall-modal modal-wind">
+	<p class="title">ОБРАТНЫЙ ЗВОНОК</p>
+	<?php echo do_shortcode('[contact-form-7 id="77" title="Обратный звонок"]'); ?>
+</div><!-- recall-modal modal-wind -->
+
 	<?php wp_footer(); ?>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
 	
 	<!-- analytics -->
 	<script>
@@ -82,6 +87,12 @@
 		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
 		s.parentNode.insertBefore(g,s)})(document,'script');
 	</script>
+
+<script>
+	$( ".wpcf7-form-control-wrap span" ).click(function() {
+  alert( "Handler for .click() called." );
+});
+</script>
 
 </body>
 </html>

@@ -4,7 +4,7 @@
 <article class="response">
 	<div class="inner">
 		<h6><?php the_title(); ?></h6>
-		<a href="" class="leave-response button-transwhite">НАПИСАТЬ ОТЗЫВ</a>
+		<a href="#" class="leave-response button-transwhite">НАПИСАТЬ ОТЗЫВ</a>
 		<ul class="clearfix">
 			<li>
 				<?php the_content(); ?>

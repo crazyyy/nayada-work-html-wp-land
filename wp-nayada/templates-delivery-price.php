@@ -26,7 +26,7 @@
 			<p class="price-quantity"><?php the_field( "bottom_left_price_name_1" ); ?><span><?php the_field( "bottom_left_price_1" ); ?></span></p>
 			<p class="price-quantity"><?php the_field( "bottom_left_price_name_2" ); ?><span><?php the_field( "bottom_left_price_2" ); ?></span></p>
 			<p class="gray"><?php the_field( "bottom_left_shot_grey" ); ?></p>
-			<a href="" class="order button-orange">ЗАКАЗАТЬ</a>
+			<button class="order button-orange" type="button">ЗАКАЗАТЬ</button>
 		</div><!-- left-block -->
 		<div class="right-block">
 			<h3><?php the_field( "bottom_right_title" ); ?></h3>
