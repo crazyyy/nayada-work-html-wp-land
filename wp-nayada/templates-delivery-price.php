@@ -23,8 +23,8 @@
 		<div class="left-block">
 			<h3><?php the_field( "bottom_left_title" ); ?></h3>
 			<?php the_field( "bottom_left_shot_descr" ); ?>
-			<p class="price-quantity"><?php the_field( "bottom_left_price_name_1" ); ?><span><?php the_field( "bottom_left_price_1" ); ?></span></p>
-			<p class="price-quantity"><?php the_field( "bottom_left_price_name_2" ); ?><span><?php the_field( "bottom_left_price_2" ); ?></span></p>
+			<p class="price-quantity price-one"><?php the_field( "bottom_left_price_name_1" ); ?><span><?php the_field( "bottom_left_price_1" ); ?></span></p>
+			<p class="price-quantity price-two"><?php the_field( "bottom_left_price_name_2" ); ?><span><?php the_field( "bottom_left_price_2" ); ?></span></p>
 			<p class="gray"><?php the_field( "bottom_left_shot_grey" ); ?></p>
 			<button class="order button-orange" type="button">ЗАКАЗАТЬ</button>
 		</div><!-- left-block -->

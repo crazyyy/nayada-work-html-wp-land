@@ -33,11 +33,12 @@ $( ".order" ).click(function() {
 $( ".leave-response" ).click(function() {
   $('.client-modal').bPopup();          
 });
+$( "h6.city" ).click(function() {
+  $('.city-modal').bPopup({
+        closeClass:'close1'
+    });          
+});
 // hover captions 
-
-
-
-
 
 /*!
  * strength.js
@@ -201,4 +202,25 @@ $(document).ready(function ($) {
 		}
 	}
 	);
+});
+CityBar = $('h6.city');
+CityBarTwo = $('h6.city_dubl');
+PhoneBar = $('.test_phone');
+PhoneBarTwo = $('.work_phone');
+PriceOne = $('.price-one span');
+PriceTwo = $('.price-two span');
+
+$(".dnepr_city").click(function(){
+    CityBar.html('Днепропетровск');
+    CityBarTwo.html('Днепропетровск');
+    PhoneBar.html('<a href="tel:+380567980627">(056) 798-06-27</a>');
+    PhoneBarTwo.html('<a href="tel:+380567980627">(056) 798-06-27</a>');
+    
+});
+
+$(".dzerg_city").click(function(){
+    CityBar.html('Днепродзержинск');
+    CityBarTwo.html('Днепродзержинск');
+    PhoneBar.html('<a href="tel:+380567980627">(555) 666-11-00</a>');
+    PhoneBarTwo.html('<a href="tel:+380567980627">(555) 666-11-00</a>');
 });

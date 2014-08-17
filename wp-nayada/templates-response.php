@@ -4,12 +4,12 @@
 <article class="response">
 	<div class="inner">
 		<h6><?php the_title(); ?></h6>
-		<a href="#" class="leave-response button-transwhite">НАПИСАТЬ ОТЗЫВ</a>
+		<button type="button" class="leave-response button-transwhite">НАПИСАТЬ ОТЗЫВ</button>
 		<ul class="clearfix">
 			<li>
 				<?php the_content(); ?>
-				<p class="price-quantity">1 баллон <span>24 грн.</span></p>
-				<p class="price-quantity">2 и более <span>22 грн.</span></p>
+				<p class="price-quantity price-one">1 баллон <span>24 грн.</span></p>
+				<p class="price-quantity price-two">2 и более <span>22 грн.</span></p>
 			</li>
 			<li>
 				<h3><?php the_field( "bottom_right_title" ); ?></h3>

@@ -31,7 +31,7 @@
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a rel="nofollow" href="http://browsehappy.com/">upgrade your browser</a> or <a rel="nofollow" href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 <div id="wrapper">
-	<header class="clearfix">
+<header class="clearfix">
 	<div class="inner slider-container">
 		<?php echo get_new_royalslider(1); ?>
 	</div><!-- slider-container -->
@@ -39,12 +39,22 @@
 		<div class="blue-bg"></div>
 		<div class="inner">
 			<div id="header">
-				<div class="logo-block"></div>
+				<div class="logo-block">
+					<div class="choise_city">
+						<h6 class="city">Днепропетровск</h6>
+						<span class="test_phone"><a href="tel:+380567980627">(056) 798-06-27</a></span>
+					</div><!-- choise_city -->
+				</div><!-- logo-block -->
 				<?php wpeHeadNav(); ?>
 			</div>	<!-- header -->
 		
 			<div id="staticHeader" style="display:none">
-				<div class="logo-block"></div>
+				<div class="logo-block">
+					<div class="choise_city">
+						<h6 class="city city_dubl">Днепропетровск</h6>
+						<span class="test_phone work_phone"><a href="tel:+380567980627">(056) 798-06-27</a></span>
+					</div><!-- choise_city -->
+				</div><!-- logo-block -->
 				<?php wpeHeadNav(); ?>
 			</div><!-- staticHeader -->
 		</div><!-- inner -->
@@ -83,6 +93,12 @@
 	<?php echo do_shortcode('[contact-form-7 id="78" title="Добавить отзыв"]'); ?>
 </div><!-- client-modal modal-wind -->
 
+<div class="city-modal modal-wind">
+	<h5>ВЫБЕРИТЕ ВАШ ГОРОД</h5>
+	<button type="button" class="dnepr_city close1">ДНЕПРОПЕТРОВСК</button>
+	<button type="button" class="dzerg_city close1">ДНЕПРОДЗЕРЖИНСК</button>
+</div>
+
 	<?php wp_footer(); ?>
 	
 	<!-- analytics -->
@@ -92,5 +108,6 @@
 		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
 		s.parentNode.insertBefore(g,s)})(document,'script');
 	</script>
+
 </body>
 </html>
