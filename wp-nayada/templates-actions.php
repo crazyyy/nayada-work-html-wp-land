@@ -7,7 +7,8 @@
 		<div class="actions-slider clearfix">
 			<h5><?php the_field( "main_title" ); ?></h5>
 			<p><?php the_field( "subtitle" ); ?></p>
-			<a href="" class="order button-orange">ЗАКАЗАТЬ</a> <a href="" class="detailed button-transparent">ПОДРОБНЕЕ</a>
+			<button type="button" class="order button-orange">ЗАКАЗАТЬ</button>
+			<button type="button" class="detailed button-transparent">ПОДРОБНЕЕ</button>
 			<div class="battles"></div><!-- battles -->
 		</div><!-- actions-slider -->
 		<?php if( have_rows('action_list') ): ?>

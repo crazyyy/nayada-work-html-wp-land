@@ -33,10 +33,6 @@ $( ".order" ).click(function() {
 $( ".leave-response" ).click(function() {
   $('.client-modal').bPopup();          
 });
-$( ".writegratz" ).click(function() {
-  $('.client-modal').bPopup();          
-});
-
 // hover captions 
 
 
