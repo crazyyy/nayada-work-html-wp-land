@@ -28,8 +28,13 @@ $(function() {
 
 
 $( ".order" ).click(function() {
-  $('.recall-modal').bPopup();
-             
+  $('.recall-modal').bPopup();          
+});
+$( ".leave-response" ).click(function() {
+  $('.client-modal').bPopup();          
+});
+$( ".writegratz" ).click(function() {
+  $('.client-modal').bPopup();          
 });
 
 // hover captions 

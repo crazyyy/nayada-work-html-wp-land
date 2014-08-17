@@ -78,6 +78,11 @@
 	<?php echo do_shortcode('[contact-form-7 id="77" title="Обратный звонок"]'); ?>
 </div><!-- recall-modal modal-wind -->
 
+<div class="client-modal modal-wind">
+	<p class="title">ВАШ ОТЗЫВ</p>
+	<?php echo do_shortcode('[contact-form-7 id="78" title="Добавить отзыв"]'); ?>
+</div><!-- client-modal modal-wind -->
+
 	<?php wp_footer(); ?>
 	
 	<!-- analytics -->
@@ -87,12 +92,5 @@
 		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
 		s.parentNode.insertBefore(g,s)})(document,'script');
 	</script>
-
-<script>
-	$( ".wpcf7-form-control-wrap span" ).click(function() {
-  alert( "Handler for .click() called." );
-});
-</script>
-
 </body>
 </html>

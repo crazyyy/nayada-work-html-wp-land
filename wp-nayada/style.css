@@ -1233,6 +1233,9 @@ section {
   border-bottom: 0;
 }
 /* modal window */
+.modal-wind {
+  display: none;
+}
 .recall-modal {
   width: 500px;
   height: 180px;
@@ -1281,7 +1284,7 @@ section {
   background-color: #fdaf60;
 }
 .recall-modal .wpcf7 span.wpcf7-not-valid-tip {
-  top: -51px;
+  top: -110px;
   height: 50px;
   background-color: red;
   position: relative;
@@ -1294,6 +1297,123 @@ section {
 .recall-modal .wpcf7 .ajax-loader {
   display: none !important;
 }
+.recall-modal .wpcf7 .wpcf7-mail-sent-ok {
+  background-color: #479dca;
+  top: -200px;
+  position: relative;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: 420px;
+  height: 160px;
+  padding: 40px 40px 0;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+.recall-modal .wpcf7 .wpcf7-mail-sent-ok h5{
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.recall-modal .wpcf7 .wpcf7-mail-sent-ok h6{
+}
+.client-modal {
+  width: 680px;
+  height: 510px;
+  background-color: #479dca;
+  padding: 30px 50px 0;
+}
+.client-modal p.title {
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  margin: 0 0 26px;
+}
+.client-modal .wpcf7 {
+  width: 680px;
+  height: 450px;
+  margin: 0 auto;
+}
+.client-modal input,
+.client-modal textarea {
+  border: 0;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 200;
+}
+.client-modal input {
+  width: 294px;
+  padding: 0 18px;
+  height: 54px;
+  margin-bottom: 15px;
+}
+.client-modal .wpcf7-form-control-wrap.email,
+.client-modal .wpcf7-form-control-wrap.your-name {
+  width: 294px;
+  overflow: hidden;
+}
+.client-modal span.email {
+  margin-right: 20px;
+}
+.client-modal textarea {
+  padding: 18px;
+  width: 644px;
+  height: 224px;
+  margin: 0 auto 30px;
+}
+.client-modal input[type=submit] {
+  background-color: #ffa539;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  width: 424px;
+  height: 50px;
+  display: block;
+}
+.client-modal input[type=submit]:hover {
+  background-color: #fdaf60;
+}
+.client-modal .wpcf7-validation-errors,
+.client-modal .ajax-loader {
+  display: none !important;
+}
+.client-modal .wpcf7-not-valid-tip {
+  color: #fff;
+  background-color: red;
+  padding: 18px 0;
+  text-align: center;
+  display: block;
+  width: 680px;
+  top: -95px;
+  position: absolute;
+  z-index: 5;
+}
+.client-modal .wpcf7-mail-sent-ok {
+  width: 570px;
+  height: 470px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #479dca;
+  border: 0;
+  color: #fff;
+  margin: 0;
+  padding: 70px 105px 0;
+  text-align: center;
+  font-size: 24px;
+}
+.client-modal .wpcf7-mail-sent-ok h5 {
+  margin: 0 auto 80px;
+}
+.client-modal .wpcf7-mail-sent-ok h6 {
+  line-height: 2;
+}
+
+
+
+
 /* Footer
 -----------------------------------------------------------------------------*/
 footer {
