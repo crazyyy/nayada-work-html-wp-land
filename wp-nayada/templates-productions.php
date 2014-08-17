@@ -1,7 +1,7 @@
 <?php query_posts("p=28"); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<article class="productions">
+<article id="productions" class="productions">
 	<div class="inner">
 		<h5><?php the_title(); ?></h5>
 		<p class="descr"><?php the_field( "descript" ); ?></p>

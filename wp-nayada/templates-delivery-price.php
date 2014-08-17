@@ -1,7 +1,7 @@
 <?php query_posts("p=22"); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<article class="delivery-price">
+<article id="delivery" class="delivery-price">
 	<div class="inner clearfix">
 		<h6><?php the_title(); ?></h6>
 		<h2><?php the_field( "subtite" ); ?></h2>

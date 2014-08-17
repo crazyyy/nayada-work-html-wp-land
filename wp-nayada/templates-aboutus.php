@@ -1,7 +1,7 @@
 <?php query_posts("p=30"); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<article class="aboutus">
+<article id="aboutus" class="aboutus">
 	<div class="inner">
 		<h6><?php the_title(); ?></h6>
 			<h5><?php the_field( "subtitle" ); ?></h5>

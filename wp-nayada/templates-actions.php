@@ -1,7 +1,7 @@
 <?php query_posts("p=26"); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<article class="actions">
+<article id="actions" class="actions">
 	<div class="inner">
 		<h6>Акции</h6>
 		<div class="actions-slider clearfix">
