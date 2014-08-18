@@ -19,6 +19,8 @@
 	    	<?php endif; ?>
 		<h4 class="comments"><?php the_field( "clients_title" ); ?></h4>
 		<?php if( have_rows('clients_response') ): ?>
+	</div><!-- inner -->
+	<div class="white-response">
 		<ul class="clearfix client-response">
 			<?php while( have_rows('clients_response') ): the_row(); 
     			$responde_content = get_sub_field('responde_content');
@@ -31,7 +33,7 @@
 			<?php endwhile; ?>
 		</ul><!-- client-response -->
 		<?php endif; ?>
-	</div><!-- inner -->
+	</div><!-- white-response -->
 </article>  <!-- aboutus -->  
 
 

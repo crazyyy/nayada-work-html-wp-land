@@ -14,8 +14,6 @@ $(function() {
 	}
 
 });
-
-
 // modal window
 // http://dinbror.dk/bpopup/
 /*================================================================================
@@ -154,6 +152,9 @@ $( ".menu-item-18 a" ).click(function() {
 $( ".menu-item-19 a" ).click(function() {
   $('#aboutus').animatescroll();
 });
+$( ".detailed" ).click(function() {
+  $('#about-water').animatescroll();
+});
 // tabs 
 // https://github.com/aarondo/tabulous.js
 $(document).ready(function ($) {
@@ -203,18 +204,45 @@ $(document).ready(function ($) {
 	}
 	);
 });
+/* Конфигурация для настройки цен и телефонов по городам, некоторые вещи нужно задавать и в админке и здесь, некоторые только здесь. 
+Скажем проще - заполняйте и там и там.
+CityBar - название города в шапке
+CityBarTwo - название города в "плавающей шапке"
+PhoneBar, PhoneBarTwo - телефон в шапке и плавающей шапке
+PriceOne, PriceTwo, PriceOneBott, PriceOneBott - цены за 1 и 2 бутля в серединке контента и в шапке. 
+EquipPhone - номер телефона в оборудовании
+WorkTime - время работы в подвале
+FullPhone - все номеры телефонов в подвале 
+
+!!! ВАЖНО !!! сохраняйте html форматирование. Сломаете - будет не ок
+*/ 
+
 CityBar = $('h6.city');
 CityBarTwo = $('h6.city_dubl');
 PhoneBar = $('.test_phone');
 PhoneBarTwo = $('.work_phone');
-PriceOne = $('.price-one span');
-PriceTwo = $('.price-two span');
+PriceOne = $('#delivery .price-one span');
+PriceOneBott = $('.price-one span');
+PriceTwo = $('#delivery .price-two span');
+PriceTwoBott = $('.price-two span');
+EquipPhone = $('.wide-contact span');
+CityBottom = $('.city_bottom');
+WorkTime = $('.work_time');
+FullPhone = $('.full_phone');
 
 $(".dnepr_city").click(function(){
     CityBar.html('Днепропетровск');
     CityBarTwo.html('Днепропетровск');
     PhoneBar.html('<a href="tel:+380567980627">(056) 798-06-27</a>');
     PhoneBarTwo.html('<a href="tel:+380567980627">(056) 798-06-27</a>');
+    PriceOne.html('24 грн.');
+    PriceOneBott.html('24 грн.');
+    PriceTwo.html('22 грн.');
+    PriceTwoBott.html('22 грн.');
+    EquipPhone.html('<a href="tel:+380567980627">(056) 798-06-27</a>.');
+    CityBottom.html('Диспетчерская служба в Днепропетровске');
+    WorkTime.html('<p>Понедельник – Пятница<br>8.00 – 18.00<br>Суббота – Воскресенье<br>9.00 – 17.00</p>');
+    FullPhone.html('<a href="tel:+380567980627">(056) 798-06-27</a><br><a href="tel:+380676310967">(067) 631-09-67</a><br><a href="tel:+380636070627">(063) 607-06-27</a><br>');
     
 });
 
@@ -223,4 +251,12 @@ $(".dzerg_city").click(function(){
     CityBarTwo.html('Днепродзержинск');
     PhoneBar.html('<a href="tel:+380567980627">(555) 666-11-00</a>');
     PhoneBarTwo.html('<a href="tel:+380567980627">(555) 666-11-00</a>');
+    PriceOne.html('42 грн.');
+    PriceOneBott.html('42 грн.');
+    PriceTwo.html('48 грн.');
+    PriceTwoBott.html('48 грн.');
+    EquipPhone.html('<a href="tel:+380567980627">(000) 111-11-11</a>.');
+    CityBottom.html('Диспетчерская служба в Днепропетровске');
+    WorkTime.html('<p>Понедельник – Пятница<br>8.00 – 18.00<br>Суббота – Воскресенье<br>9.00 – 17.00</p>');
+    FullPhone.html('<a href="tel:+380567980627">(056) 798-06-27</a><br><a href="tel:+380676310967">(067) 631-09-67</a><br><a href="tel:+380636070627">(063) 607-06-27</a><br>');
 });

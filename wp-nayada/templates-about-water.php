@@ -1,6 +1,6 @@
 <?php query_posts("p=20"); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<article class="about-water">
+<article id="about-water" class="about-water">
 	<h2><?php the_title(); ?></h2>
 	<div id="tabs">
 		<ul class="tab-header">

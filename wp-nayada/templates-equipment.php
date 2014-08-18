@@ -24,7 +24,7 @@
         <?php endif; ?>
 		<div class="wide-contact">
 			<p><?php the_field( "equip_bottom_title" ); ?></p>
-			<a href="tel:<?php the_field( "equip_bottom_phonenumber_clear" ); ?>"><?php the_field( "equip_bottom_phone_beaty" ); ?></a>
+			<span><a href="tel:<?php the_field( "equip_bottom_phonenumber_clear" ); ?>"><?php the_field( "equip_bottom_phone_beaty" ); ?></a></span>
 			<p class="grey"><?php the_field( "equip_bottom_grey_text" ); ?></p>
 		</div><!-- wide-contact -->
 	</div><!-- inner -->

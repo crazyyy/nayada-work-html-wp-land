@@ -8,7 +8,7 @@
 			<h5><?php the_field( "main_title" ); ?></h5>
 			<p><?php the_field( "subtitle" ); ?></p>
 			<button type="button" class="order button-orange">ЗАКАЗАТЬ</button>
-			<button type="button" class="detailed button-transparent">ПОДРОБНЕЕ</button>
+			<button href="#about-water" type="button" class="detailed button-transparent">ПОДРОБНЕЕ</button>
 			<div class="battles"></div><!-- battles -->
 		</div><!-- actions-slider -->
 		<?php if( have_rows('action_list') ): ?>

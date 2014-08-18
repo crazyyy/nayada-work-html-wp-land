@@ -261,7 +261,7 @@ nav ul li {
 .logo-block .choise_city h6{
   font-size: 14px;
   color: #ffffff;
-  margin-bottom: 11px;
+  margin-bottom: 4px;
   width: 140px;
   background-image: url(img/bg/choise_city.png);
   background-repeat: no-repeat;
@@ -675,7 +675,6 @@ section {
   background-image: url(img/ico/ico-delivery-li-4.png);
   padding: 107px 10px 0;
   width: 215px;
-  font-size: 13px;
 }
 .delivery-price .wide-block li h5 {
   font-size: 18px;
@@ -688,11 +687,11 @@ section {
 }
 .delivery-price .left-block,
 .delivery-price .right-block {
-  width: 378px;
+  width: 408px;
   height: 378px;
   margin: 0 10px 36px;
   background-color: #fff;
-  padding: 18px 22px 0 60px;
+  padding: 18px 22px 0 30px;
   overflow: hidden;
 }
 .delivery-price .left-block h3,
@@ -721,7 +720,6 @@ section {
   text-align: center;
   font-size: 24px;
   margin: 0 auto 8px;
-  letter-spacing: 3px;
 }
 .delivery-price .left-block .price-quantity span{
   color: #65c4f6;
@@ -1216,6 +1214,9 @@ section {
   background-color: #fff;
   margin: 0 auto 1px;
 }
+.aboutus .white-response {
+  background-color: #fff;
+}
 .aboutus .client-response li {
   width: 430px;
   float: left;
@@ -1524,6 +1525,9 @@ section {
 }
 .city-modal button:hover{
   background-color: rgba(255, 255, 255, 0.3);
+}
+button {
+  font-weight: bold;
 }
 /* Footer
 -----------------------------------------------------------------------------*/

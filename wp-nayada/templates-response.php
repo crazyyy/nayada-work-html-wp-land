@@ -12,12 +12,12 @@
 				<p class="price-quantity price-two">2 и более <span>22 грн.</span></p>
 			</li>
 			<li>
-				<h3><?php the_field( "bottom_right_title" ); ?></h3>
+				<h3 class="city_bottom"><?php the_field( "bottom_right_title" ); ?></h3>
 				<div class="phone-foot clearfix">
-					<div>
+					<div class="work_time">
 						<?php the_field( "dnipro_work_time" ); ?>
 					</div>
-					<div>
+					<div class="full_phone">
 						<a href="tel:<?php the_field( "dnepr_phone_1_clear" ); ?>"><?php the_field( "dnepr_phone_1_beaty" ); ?></a>
 						<br>
 						<a href="tel:<?php the_field( "dnepr_phone_2_clear" ); ?>"><?php the_field( "dnepr_phone_2_beaty" ); ?></a>
